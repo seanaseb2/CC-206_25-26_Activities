@@ -207,6 +207,7 @@ class ProfileScreen extends StatelessWidget {
         _infoRow(Icons.book, 'Hobbies', 'Photography, Gaming'),
         _infoRow(Icons.location_city, 'City', 'Santa Barbara, Iloilo'),
         _infoRow(Icons.cake, 'Birthday', 'December 31, 2005'),
+        _infoRow(Icons.favorite, 'Status', 'In a relationship'),
         _infoRow(Icons.leaderboard, 'TFT Rank', 'Master (Set 16)'),
         const Divider(),
         const SizedBox(height: 16),
