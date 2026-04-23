@@ -139,7 +139,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ElevatedButton.icon(
           onPressed: _playPetSound,
           icon: const Icon(Icons.volume_up),
-          label: const Text('Play Pet Sound'),
+          label: const Text('Bark!'),
         ),
       ],
     );
