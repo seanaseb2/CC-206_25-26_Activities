@@ -220,10 +220,6 @@ class ProfileScreen extends StatelessWidget {
           'Sean is a 20-year-old student from WVSU taking BS Computer Science. He currently serves as a Board Member for Programs in LINK.exe, and is also a senior photographer for the organization. He continues to develop skills in both leadership and creative work while balancing academics and responsibilities, with the goal of pursuing a future in CS-related or media-related field. Let\'s play TFT guys!',
           style: TextStyle(fontSize: 16, height: 1.4),
         ),
-        const Text(
-          '\nNote: Made for mobile view (preferrably 360px width)',
-          style: TextStyle(fontSize: 16, height: 1.4),
-        ),
       ],
     );
   }
