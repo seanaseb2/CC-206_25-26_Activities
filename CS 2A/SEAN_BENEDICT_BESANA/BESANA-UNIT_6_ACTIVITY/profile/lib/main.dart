@@ -9,12 +9,19 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context   ) {
+  Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Simple Profile App',
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueGrey),
+        fontFamily: 'Nunito',
+        textTheme: TextTheme(
+          headlineLarge: const TextStyle(fontFamily: 'Baloo2'),
+          titleLarge: const TextStyle(fontFamily: 'Baloo2'),
+          bodyLarge: const TextStyle(fontFamily: 'Nunito'),
+          bodyMedium: const TextStyle(fontFamily: 'Nunito'),
+        ),
       ),
       home: const AppShell(),
     );
@@ -53,7 +60,7 @@ class _AppShellState extends State<AppShell> {
             const DrawerHeader(
               decoration: BoxDecoration(color: Colors.blueGrey),
               child: Text(
-                'Navigation',
+                'Sean Benedict Besana\nBSCS 2-A\nUnit 6 Activity',
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
@@ -156,7 +163,7 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: Text(value, style: const TextStyle(color: Colors.black54)),
+            child: Text(value, style: const TextStyle(color: Colors.black)),
           ),
         ],
       ),
@@ -197,9 +204,11 @@ class ProfileScreen extends StatelessWidget {
         const Divider(),
         _infoRow(Icons.email, 'Email', 'seanbenedict.besana@wvsu.edu.ph'),
         _infoRow(Icons.school, 'School', 'West Visayas State University'),
-        _infoRow(Icons.book, 'Hobbies', 'Studying'),
-        _infoRow(Icons.location_city, 'City', 'Iloilo'),
+        _infoRow(Icons.bookmark, 'Course', 'BS Computer Science'),
+        _infoRow(Icons.book, 'Hobbies', 'Photography, Gaming'),
+        _infoRow(Icons.location_city, 'City', 'Santa Barbara, Iloilo'),
         _infoRow(Icons.cake, 'Birthday', 'December 31, 2005'),
+        _infoRow(Icons.leaderboard, 'TFT Rank', 'Master (Set 16)'),
         const Divider(),
         const SizedBox(height: 16),
         const Text(
@@ -208,7 +217,11 @@ class ProfileScreen extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         const Text(
-          'I am a student who enjoys learning new skills and building simple apps. I like studying and spending time with family. I am working to improve my Flutter knowledge and create easy-to-use applications that show basic profile and home content.',
+          'Sean is a 20-year-old student from WVSU taking BS Computer Science. He currently serves as a Board Member for Programs in LINK.exe, and is also a senior photographer for the organization. He continues to develop skills in both leadership and creative work while balancing academics and responsibilities, with the goal of pursuing a future in CS-related or media-related field. Let\'s play TFT guys!',
+          style: TextStyle(fontSize: 16, height: 1.4),
+        ),
+        const Text(
+          '\nNote: 360x800 screen size',
           style: TextStyle(fontSize: 16, height: 1.4),
         ),
       ],
