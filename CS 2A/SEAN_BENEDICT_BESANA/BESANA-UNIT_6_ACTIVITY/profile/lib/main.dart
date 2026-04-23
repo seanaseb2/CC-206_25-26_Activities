@@ -82,7 +82,6 @@ class _AppShellState extends State<AppShell> {
       body: Center(
         child: Container(
           width: 360,
-          constraints: const BoxConstraints(maxHeight: 800),
           child: _screens[_selectedIndex],
         ),
       ),
