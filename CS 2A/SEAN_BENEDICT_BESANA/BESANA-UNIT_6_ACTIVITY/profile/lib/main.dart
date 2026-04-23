@@ -221,7 +221,7 @@ class ProfileScreen extends StatelessWidget {
           style: TextStyle(fontSize: 16, height: 1.4),
         ),
         const Text(
-          '\nNote: 360x800 screen size',
+          '\nNote: Made for mobile view (preferrably 360px width)',
           style: TextStyle(fontSize: 16, height: 1.4),
         ),
       ],
